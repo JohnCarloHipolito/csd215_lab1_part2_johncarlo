@@ -4,7 +4,7 @@
         this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');
     });
 
-    $("#num1, #num2").on('input', function () {
+    $("#firstNum, #secondNum").on('input', function () {
         $("#result").text("");
     });
 });
