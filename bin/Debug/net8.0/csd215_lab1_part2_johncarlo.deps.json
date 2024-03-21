@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "csd215_lab1_part2_johncarlo/1.0.0": {
+        "runtime": {
+          "csd215_lab1_part2_johncarlo.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "csd215_lab1_part2_johncarlo/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
