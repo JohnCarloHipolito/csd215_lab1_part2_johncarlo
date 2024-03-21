@@ -1,4 +1,10 @@
-﻿// Please see documentation at https://learn.microsoft.com/aspnet/core/client-side/bundling-and-minification
-// for details on configuring this project to bundle and minify static web assets.
+﻿$(document).ready(function () {
+    // Restrict input to valid numbers only using regex
+    $(".form-control").on('input', function () {
+        this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');
+    });
 
-// Write your JavaScript code.
+    $("#num1, #num2").on('input', function () {
+        $("#result").text("");
+    });
+});

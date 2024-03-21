@@ -1,8 +1,39 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "John's Calculator Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="container">
+    <div class="title-container mt-5 mb-2">
+        <h2>John's Simple Calculator</h2>
+    </div>
+    <form method="post" id="simple-calc">
+        <div class="input-container">
+            <div class="input-group mb-4">
+                <span class="input-group-text">1st Number</span>
+                <input type="text" name="firstNum" id="firstNum" class="form-control" required autocomplete="off">
+            </div>
+            <div class="input-group mb-4">
+                <span class="input-group-text">2nd Number</span>
+                <input type="text" name="secondNum" id="secondNum" class="form-control" required autocomplete="off">
+            </div>
+            <div class="input-group mb-4">
+                <span class="input-group-text">Result</span>
+                <label id="result" class="form-control">@ViewBag.Result</label>
+            </div>
+        </div>
+        <div class="btn-container">
+            <div class="btn-item">
+                <button type="submit" name="operation" value="add" class="btn btn-primary">+</button>
+            </div>
+            <div class="btn-item">
+                <button type="submit" name="operation" value="subtract" class="btn btn-primary">-</button>
+            </div>
+            <div class="btn-item">
+                <button type="submit" name="operation" value="multiply" class="btn btn-primary">*</button>
+            </div>
+            <div class="btn-item">
+                <button type="submit" name="operation" value="divide" class="btn btn-primary">/</button>
+            </div>
+        </div>
+    </form>
 </div>
